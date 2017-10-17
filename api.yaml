@@ -10,6 +10,7 @@
       uri:
         url: https://18.216.19.92/api/v1/
         method: POST
+		validate_certs: false
         user: admin
         password: ansible@123
         status_code: 202

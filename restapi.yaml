@@ -1,6 +1,6 @@
 ---
 - name: Running REST API
-  hosts: ansiblenode
+  hosts: localhost
   tasks:
     - name: Invoking REST API
       uri:

@@ -1,0 +1,12 @@
+---
+- name: Running REST API
+  hosts: ansiblenode
+  tasks:
+    - name: Invoking REST API
+      uri:
+        url: https://18.216.19.92/api/v1/
+        user: admin
+        password: ansible@123
+        body_format: json
+        validate_certs: false
+      become: true

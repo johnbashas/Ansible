@@ -4,7 +4,6 @@
   tasks:
     - name: Invoking REST API
       become: yes
-      delegate_to: localhost
       uri:
         url: https://18.216.19.92/api/v1/
         owner: ansible
